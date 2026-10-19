@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ankur Sharda | Official Website</title>
+  <meta name="description" content="Official website of Ankur Sharda. SEBI Registered Research Analyst, Anks Vodcast, and Anks Dharam AI Cinematic Films.">
+
+  <style>
+    :root {
+      --gold: #f4c66e;
+      --gold-light: #ffe3a5;
+      --background: #050505;
+      --card: #15110d;
+      --text: #ffffff;
+      --muted: #d1c3a9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Main cinematic portrait */
+
+    .hero {
+      position: relative;
+      max-width: 1600px;
+      margin: 0 auto;
+      background: #000;
+    }
+
+    .portrait {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    /* Festival official selection badge */
+
+    .festival-badge {
+      position: absolute;
+      top: 3%;
+      left: 3%;
+      width: clamp(85px, 13vw, 175px);
+      height: auto;
+      background: #ffffff;
+      padding: 6px;
+      border-radius: 10px;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.5);
+    }
+
+    /* Three main clickable sections */
+
+    .links {
+      max-width: 1250px;
+      margin: -8px auto 0;
+      padding: 32px 20px 55px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(145deg, #241b10, #090909);
+      border: 1px solid #9e742e;
+      border-radius: 16px;
+      padding: 22px;
+      min-width: 0;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .card:hover,
+    .card:focus-visible {
+      transform: translateY(-5px);
+      border-color: var(--gold-light);
+    }
+
+    .card img {
+      width: 100%;
+      height: 190px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+
+    .card h2 {
+      font-size: clamp(17px, 2vw, 24px);
+      color: var(--gold);
+      margin: 18px 0 8px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 15px;
+      margin: 0;
+      flex-grow: 1;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 18px;
+      background: linear-gradient(
+        100deg,
+        #9c691c,
+        #ffe2a0,
+        #b27c28
+      );
+      color: #171006;
+      font-weight: bold;
+      font-size: 14px;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 15px;
+      border-top: 1px solid #352719;
+      color: #a99b82;
+      font-size: 13px;
+    }
+
+    /* Mobile responsive layout */
+
+    @media (max-width: 700px) {
+      .links {
+        grid-template-columns: 1fr;
+        padding: 22px 18px 40px;
+      }
+
+      .card img {
+        height: 160px;
+      }
+
+      .festival-badge {
+        width: 85px;
+        top: 2%;
+        left: 2%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+
+    <!-- Main portrait with festival badge -->
+
+    <section class="hero" aria-label="Ankur Sharda">
+      <img
+        class="portrait"
+        src="Ankur Sharda_ Golden Cinematic Portrait.png"
+        alt="Ankur Sharda - Content Creator, Research Analyst and Cinematic Film Maker"
+      >
+
+      <img
+        class="festival-badge"
+        src="001_NeuWave_badge_transparentpng.png"
+        alt="Neu Wave AI Film Festival - Official Selection"
+      >
+    </section>
+
+    <!-- Three clickable sections -->
+
+    <section class="links" aria-label="Explore Ankur Sharda's work">
+
+      <!-- LEFT: ANKS VODCAST -->
+
+      <a
+        class="card"
+        href="https://www.youtube.com/@anksvodcast"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visit Anks Vodcast YouTube channel"
+      >
+        <img
+          src="VODCAST Logo.png"
+          alt="Anks Vodcast Logo"
+        >
+
+        <h2>Anks Vodcast</h2>
+
+        <p>
+          Current Affairs, Geopolitics,
+          Global Insights and Technology
+        </p>
+
+        <span class="button">
+          Visit YouTube Channel ↗
+        </span>
+      </a>
+
+      <!-- CENTRE: SEBI RESEARCH ANALYST -->
+
+      <a
+        class="card"
+        href="https://www.insightpier.com/analyst/ankursharda"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visit Ankur Sharda Research Analyst profile and subscribe"
+      >
+        <img
+          src="Ankur 2MB Insta.png"
+          alt="Ankur Sharda - SEBI Registered Research Analyst"
+        >
+
+        <h2>SEBI Registered Research Analyst</h2>
+
+        <p>
+          Subscribe for Stock Research
+          and Recommendations
+        </p>
+
+        <span class="button">
+          View Profile &amp; Subscribe ↗
+        </span>
+      </a>
+
+      <!-- RIGHT: ANKS DHARAM -->
+
+      <a
+        class="card"
+        href="https://soft-unit-5bea.neevtechnocom.workers.dev/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Explore Anks Dharam cinematic mythology films"
+      >
+        <img
+          src="Om Logo.png"
+          alt="Anks Dharam Gold Om Logo"
+        >
+
+        <h2>Anks Dharam</h2>
+
+        <p>
+          Epic Hindu Mythology Stories,
+          AI-Assisted Cinematic Animated Films
+        </p>
+
+        <span class="button">
+          Explore Cinematic Films ↗
+        </span>
+      </a>
+
+    </section>
+
+  </main>
+
+  <footer>
+    © Ankur Sharda | Official Website
+  </footer>
+
+</body>
+</html>
