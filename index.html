@@ -210,6 +210,13 @@ html, body {
     height: 48px;
   }
 }
+
+/* Compact legal footer below the cinematic homepage */
+.legal-footer{background:#080808;padding:18px 12px 22px;text-align:center;border-top:1px solid #242424}
+.legal-links{display:flex;justify-content:center;flex-wrap:wrap;gap:8px}
+.legal-links a{display:inline-block;background:#050505;color:#fff;border:1px solid #555;border-radius:6px;padding:7px 11px;font:12px Arial,Helvetica,sans-serif;text-decoration:none}
+.legal-links a:hover,.legal-links a:focus-visible{border-color:#f5c978;color:#f5c978}
+.legal-footer small{display:block;color:#aaa;margin-top:12px;font:11px Arial,Helvetica,sans-serif}
 </style>
 </head>
 
@@ -287,6 +294,15 @@ html, body {
   </nav>
 
 </main>
+<footer class="legal-footer" aria-label="Website policies and contact">
+  <nav class="legal-links" aria-label="Legal pages">
+    <a href="/privacy-policy.html">Privacy Policy</a>
+    <a href="/terms.html">Terms of Use</a>
+    <a href="/disclaimer.html">Disclaimer</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+  <small>© 2026 Ankur Sharda. All rights reserved.</small>
+</footer>
 
 </body>
 </html>
